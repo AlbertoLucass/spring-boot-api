@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres_parking_control:
+    container_name: parking-control
+    image: postgres
+    ports:
+      - "5434:5434"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: parking-control-db
